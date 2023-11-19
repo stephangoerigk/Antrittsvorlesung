@@ -122,14 +122,12 @@ class: top, left
 class: top, left
 ### Erhöhung der Passung von Behandlung und Patient:in
 
-#### Maßgeschneiderte Behandlungen - Präzisionspsychiatrie
-
-**One-size-fits-all Psychiatrie**
+#### One-size-fits-all Psychiatrie
 
 .center[
 ##### *Leitsatz:* Heuristik $\rightarrow$ Monitoring $\rightarrow$ Adaption nach dem Prinzip von Versuch & Irrtum.
 
-```{r eval = TRUE, echo = F, out.width = "1200px"}
+```{r eval = TRUE, echo = F, out.width = "800px"}
 knitr::include_graphics("bilder/onesizefitsall.png")
 ```
 ]
@@ -138,9 +136,9 @@ knitr::include_graphics("bilder/onesizefitsall.png")
 class: top, left
 ### Erhöhung der Passung von Behandlung und Patient:in
 
-#### Maßgeschneiderte Behandlungen - Präzisionspsychiatrie
+<small>
 
-**Präzisionspsychiatrie**
+#### Maßgeschneiderte Behandlungen - Präzisionspsychiatrie
 
 .center[
 
@@ -152,7 +150,29 @@ knitr::include_graphics("bilder/precision.png")
 ]
 
 .right[
-Topol et al.2020
+Topol et al. 2020
+]
+
+
+---
+class: top, left
+### Erhöhung der Passung von Behandlung und Patient:in
+
+<small>
+
+#### Präzisionspsychiatrie - Problem der Zieldefinition (Targets)
+
+.center[
+
+##### *Leitsatz:* Die richtige Behandlung mit individualisierter Dosis zum passenden Zeitpunkt.
+
+```{r eval = TRUE, echo = F, out.width = "1200px"}
+knitr::include_graphics("bilder/precision2.png")
+```
+]
+
+.right[
+Topol et al. 2020
 ]
 
 ---
@@ -267,14 +287,14 @@ class: top, left
 #### Target 2: Reduktion des Symptomschweregrads (Summenscore Symptomcheckliste)
 
 .center[
-```{r eval = TRUE, echo = F, out.width = "800px"}
+```{r eval = TRUE, echo = F, out.width = "1000px"}
 knitr::include_graphics("bilder/Response.png")
 ```
 ]
 
 ---
 class: top, left
-### Symptomcluster
+### Differenziertere Targets - Symptomcluster
 
 #### Berücksichtigung von Überdeckungseffekten
 
@@ -287,7 +307,7 @@ class: top, left
 .pull-left[
 .pull-left[
 .center[
-```{r eval = TRUE, echo = F, out.width = "200px"}
+```{r eval = TRUE, echo = F, out.width = "130px"}
 knitr::include_graphics("bilder/sum.png")
 ```
 ]
@@ -322,10 +342,48 @@ knitr::include_graphics("bilder/gif2.gif")
 ]
 .pull-right[
 .center[
-```{r eval = TRUE, echo = F, out.width = "250px"}
+```{r eval = TRUE, echo = F, out.width = "300px"}
 knitr::include_graphics("bilder/sideeffects.png")
 ```
 ]
+
+```{r eval=FALSE, include=FALSE}
+df = data.frame(Symptom = c("Gedrückte Stimmung",
+                            "Anhedonie",
+                            "Gefühle der Wertlosigkeit",
+                            "Appteit-/Gewichtsprobleme",
+                            "Schlafprobleme",
+                            "Psychomotorik",
+                            "Erschhöpfung",
+                            "Konzentrationsschwierigkeiten",
+                            "Suizidalität",
+                            "Angst",
+                            "Libido"),
+                DSM = c("+",
+                            "+",
+                            "+",
+                            "+",
+                            "+",
+                            "+",
+                            "+",
+                            "+",
+                            "+",
+                            "-",
+                            "-"),
+                AE = c("-",
+                            "-",
+                            "-",
+                            "+",
+                            "+",
+                            "+",
+                            "+",
+                            "+",
+                            "+",
+                            "+",
+                            "+"))
+kable(df)
+```
+
 ]
 .center[
 ```{r eval = TRUE, echo = F, out.width = "400px"}
@@ -336,7 +394,7 @@ knitr::include_graphics("bilder/symptomcluster3.png")
 
 ---
 class: top, left
-### Symptomcluster 
+### Differenziertere Targets - Symptomcluster 
 
 #### Berücksichtigung von Überdeckungseffekten (Goerigk et al. Brain Stimulation, 2021)
 
@@ -353,7 +411,7 @@ class: top, left
 #### Target 2: Reduktion des Symptomschweregrads (Summenscore Symptomcheckliste)
 
 .center[
-```{r eval = TRUE, echo = F, out.width = "800px"}
+```{r eval = TRUE, echo = F, out.width = "1000px"}
 knitr::include_graphics("bilder/Response2.png")
 ```
 ]
@@ -361,7 +419,7 @@ knitr::include_graphics("bilder/Response2.png")
 
 ---
 class: top, left
-### Response-Trajektorien
+### Dynamische Targets - Response-Trajektorien
 
 #### Berücksichtigung von Behandlungsdynamiken 
 
@@ -420,7 +478,7 @@ knitr::include_graphics("bilder/gif3.gif")
 
 ---
 class: top, left
-### Response-Trajektorien
+### Dynamische Targets - Response-Trajektorien
 
 #### Berücksichtigung von Behandlungsdynamiken 
 
@@ -432,9 +490,9 @@ knitr::include_graphics("bilder/trajs.png")
 
 ---
 class: top, left
-### Netwerke als Outcomes
+### Komplexe Targets - Netzwerke
 
-#### Targets = komplexe Systeme
+#### Systemtheorie: Einfache vs. komplexe Systeme
 
 .pull-left[
 .center[
@@ -467,10 +525,10 @@ knitr::include_graphics("bilder/systems.png")
 
 ---
 class: top, left
-### Netwerke als Outcomes
+### Komplexe Targets - Netzwerke
 
 .pull-left[
-#### Targets = komplexe Systeme
+#### 1. Inaktives Netzwerk, stabiles Equilibrium
 
 .center[
 ```{r eval = TRUE, echo = F, out.width = "2000px"}
@@ -490,10 +548,10 @@ knitr::include_graphics("bilder/p1.gif")
 
 ---
 class: top, left
-### Netwerke als Outcomes
+### Komplexe Targets - Netzwerke
 
 .pull-left[
-#### Targets = komplexe Systeme
+#### 2. Netzwerk Aktivierung
 
 .center[
 ```{r eval = TRUE, echo = F, out.width = "2000px"}
@@ -512,10 +570,10 @@ knitr::include_graphics("bilder/p2.gif")
 
 ---
 class: top, left
-### Netwerke als Outcomes
+### Komplexe Targets - Netzwerke
 
 .pull-left[
-#### Targets = komplexe Systeme
+#### 3. Symptomausbreitung
 
 .center[
 ```{r eval = TRUE, echo = F, out.width = "2000px"}
@@ -533,10 +591,10 @@ knitr::include_graphics("bilder/p3.gif")
 
 ---
 class: top, left
-### Netwerke als Outcomes
+### Komplexe Targets - Netzwerke
 
 .pull-left[
-#### Targets = komplexe Systeme
+#### 4. Erkranktes Netzwerk, stabiles Equilibrium
 
 .center[
 ```{r eval = TRUE, echo = F, out.width = "2000px"}
@@ -555,9 +613,9 @@ knitr::include_graphics("bilder/p4.gif")
 
 ---
 class: top, left
-### Netwerke als Outcomes
+### Komplexe Targets - Netzwerke
 
-#### Targets = komplexe Systeme
+#### Resiliente vs. vulnerable Systeme
 
 .center[
 ```{r eval = TRUE, echo = F, out.width = "900px"}
@@ -567,13 +625,13 @@ knitr::include_graphics("bilder/resilience1.png")
 
 ---
 class: top, left
-### Netwerke als Outcomes
+### Komplexe Targets - Netzwerke
 
-#### Targets = komplexe Systeme
+#### Behandlungsmodelle mit Kenntnis des Systemzustands
 
 .center[
 ```{r eval = TRUE, echo = F, out.width = "870px"}
-knitr::include_graphics("bilder/resilienz2.png")
+knitr::include_graphics("bilder/Resilienz2.png")
 ```
 ]
 
@@ -620,19 +678,18 @@ class: top, left
 
 .full-width[.content-box-gray[
 
-* Unterscheidung: **Deskriptiv- vs. Inferenzstatistik**
+* **Präzisionspsychiatrie** statt **One-size-fits all**
 
-* Deskriptivstatistik: Stichprobendaten **zusammenfassen** (z.B. Mittelwert)
+* Fortschritte in Datenerhebung und Modellierung, aber **unscharfe Targets**
 
-* Inferenzstatistik nutzen wir, um Ergebnisse unter Wahrscheinlichkeitsannahmen auf Population zu **verallgemeinern** (z.B. Konfidenzintervall)
+* Diagnosen bilden klinische Realität teils nicht ab $\rightarrow$ **Transdiagnostik**
 
-* Quantitative Methoden: Erkenntnisgewinn durch **Hypothesentesten**
+* Symptom-Summenwerte zu undifferenziert $\rightarrow$ **Symptomcluster**
 
-* Variablen werden i.d.R. in einer **Datenmatrix** erfasst
+* Responder-Status am Therapieende hat unzureichende zeitliche Auflösung $\rightarrow$ **Response-Trajektorien**
 
-* Auprägungen von Variablen können mit **Häufigkeitstabelle** zusammengefasst werden
+* Orthogonale Modellierung ist unterkomplex $\rightarrow$ **multivariate (Netzwerk)modelle**
 
-* Wichtige Deskriptivstatistiken: **Relative und absolute Häufigkeiten** 
 ]
 
 ]
